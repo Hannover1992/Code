@@ -1,0 +1,3 @@
+for ((i = 0 ; i < max ; i++ )); do echo "$i"; done
+export TEMP=playerctl-2.0.2_amd64.deb
+sudo dpkg -i playerctl-2.0.2_amd64.deb
