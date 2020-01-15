@@ -2,3 +2,7 @@ xosview
 
 ls -v | cat -n | while read n f; do mv -n "$f" "$n.ext"; done 
 
+./Uni/Mathe1/old/Hörsaalübung/11/KK3
+./Uni/Mathe1/old/Klausuren/KK3
+./Uni/Mathe1/HotMat1/KK3
+./Uni/Mathe1/KK3

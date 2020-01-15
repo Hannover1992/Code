@@ -1,0 +1,1 @@
+convert *.jpg my_new.pdf
