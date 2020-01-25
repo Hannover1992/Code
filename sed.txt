@@ -1,0 +1,2 @@
+"is stream editor it mean, we must pipe some input in it, and he filter what we want
+cat bash.txt | sed -n 2p
