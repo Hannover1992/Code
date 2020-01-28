@@ -1,1 +1,2 @@
 xosview
+evince // for pdf
