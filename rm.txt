@@ -1,0 +1,2 @@
+//remove everything except foo.txt
+rm -rf !("foo.txt")
