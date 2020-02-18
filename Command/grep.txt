@@ -1,0 +1,6 @@
+// search recursive for 
+grep -r "texthere" .
+
+//exclude special data type
+grep -r --exclude=\*.{html,js} class
+-r --exclude=\*.{html,js} class

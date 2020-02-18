@@ -1,2 +1,4 @@
 xosview
 evince // for pdf
+gparted
+vlc //video player
