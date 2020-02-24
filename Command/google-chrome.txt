@@ -1,0 +1,1 @@
+while read line; do google-chrome --new-tab ; done < film.txt 
