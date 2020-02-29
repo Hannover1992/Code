@@ -1,1 +1,5 @@
 convert *.jpg my_new.pdf
+
+pdftoppm 06-Unterbrechungen.pdf names -png
+
+convert -verbose -coalesce 1582388103957.gif name.png
