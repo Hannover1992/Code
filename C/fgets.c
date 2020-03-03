@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 int main(){
-	char* line = malloc(1000*sizeof(char));
-	fgets(line, 1000*sizeof(char), stdin);
-	printf("%s\n",line);
-	printf("%ld\n",strlen(line));
+	char* input = malloc(124);
+	int size = 124; 
+	fgets(input, size, stdin);
+	printf("%s\n",input);
 }
