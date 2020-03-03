@@ -12,7 +12,13 @@ void exit_failure(){
 	exit(EXIT_FAILURE);
 }
 
+void stder(){
+	printf("first\n");
+	fprintf(stderr, "%s\n", "Something");
+	printf("second\n");
+}
 int main (){
 //	invalid_argu();
-	exit_failure();
+//	exit_failure();
+	stder();
 }
