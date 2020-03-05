@@ -4,7 +4,7 @@
 #include <sys/wait.h>
 
 int main(){
-	char* A[] = {"sleep", "5", NULL};
+	char* A[] = {"seq", "5", NULL};
 	pid_t pid = fork();
 	if(pid > 0){
 		int status;
