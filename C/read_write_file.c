@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -15,6 +16,7 @@ void foo1(){
 	while (nrd = read(fd,buffer,sizeof(buffer))) {
 		write(fd1,buffer,nrd);
 	}
+	printf("%s\n",buffer);
 	
 	close(fd);
 	close(fd1);
@@ -22,8 +24,18 @@ void foo1(){
 }
 
 int foo2(){
-	char* buff = malloc(100*sizeof(char));
+//	still don't work no errors but also no write into the file
+	/*
+	char* buffer = malloc(100*sizeof(char));
+	int n, a=5, b=3;
+	n=sprintf (buffer, "%d plus %d is %d", a, b, a+b);
+/	printf ("[%s] is a string %d chars long\n",buffer,n);
+	int fd = open("text.txt", O_CREAT | O_WRONLY | O_APPEND, S_IRUSR | S_IWUSR);
+	write(fd, buffer, 100);
+	return 0;
+	*/
 }
+
 int main(){
 	foo1();
 //	foo2();

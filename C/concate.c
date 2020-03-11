@@ -10,3 +10,6 @@ void test_concate(){
 	printf("%ld\n",length);
 	printf("%s\n",new);
 }
+
+int main(){
+	te
