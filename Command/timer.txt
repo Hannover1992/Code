@@ -1,9 +1,1 @@
-2026 history | grep at now 2028 history | grep "at now" 2029 echo $(history | grep "at now" | tail -3) >> ~/Desktop/Commands/timer.txt
- 2028  history | grep "at now"
- 2029  echo $(history | grep "at now" | tail -3) >> ~/Desktop/Commands/timer.txt
- 2032  history | grep "at now" | tail -3 >> ~/Desktop/Commands/timer.txt
- 2026  history | grep at now
- 2028  history | grep "at now"
- 2029  echo $(history | grep "at now" | tail -3) >> ~/Desktop/Commands/timer.txt
- 2032  history | grep "at now" | tail -3 >> ~/Desktop/Commands/timer.txt
- 2034  history | grep "at now" | tail -5 >> ~/Desktop/Commands/timer.txt
+ at now + 1 minute <<<'notify-send ALARM'
