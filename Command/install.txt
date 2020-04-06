@@ -1,1 +1,22 @@
 sudo dpkg -i playerctl-2.0.2_amd64.deb
+
+///Install linux start
+Unpack the archive.
+
+$ tar -zxvf datagrip-2018.1.4.tar.gz 
+Rename the folder.
+
+$ mv DataGrip-2018.1.4/ datagrip
+Change the owner to root.
+
+$ chown -R root.root datagrip
+Move to /opt.
+
+$ sudo mv datagrip /opt/
+Link it into PATH.
+
+$ sudo ln -s /opt/datagrip/bin/datagrip.sh /usr/local/bin/datagrip
+Start it from the terminal.
+
+$ datagrip
+///INstall linux end

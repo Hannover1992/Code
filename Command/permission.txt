@@ -1,1 +1,5 @@
 chown -R uczen ./foo
+chmod g+w filename
+chmod g-wx filename
+chmod o+w filename
+chmod o-rwx foldername
