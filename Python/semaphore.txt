@@ -1,0 +1,8 @@
+>>> from threading import Semaphore
+>>> sem = Semaphore(5)
+>>> sem._Semaphore__value
+5
+>>> sem.acquire()
+True
+>>> sem._Semaphore__value
+4
