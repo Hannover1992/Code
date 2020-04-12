@@ -1,0 +1,5 @@
+for i in *.bam; do mv "$i" "$(echo $i | awk -F"." '{print $2}').bam"; done
+
+for i in *.bam; do mv "$i" "$(echo $i | awk -F"." '{print $2}').bam"; done
+for x in ./*; do mv ./temp/HST* ./temp/.pdf; done 
+for x in ./*; do mv ./temp/?.pdf.pdf ./temp/.pdf; done 
