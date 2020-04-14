@@ -2,3 +2,5 @@ xosview
 evince // for pdf
 gparted
 vlc //video player
+
+scrot bla.png // take screetn shot
