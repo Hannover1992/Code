@@ -1,0 +1,5 @@
+Create a ~/.local/share/applications/defaults.list if it doesn't exist
+Add the following
+
+[Default Applications]
+application/pdf=evince.desktop;

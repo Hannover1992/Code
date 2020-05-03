@@ -20,3 +20,7 @@ Start it from the terminal.
 
 $ datagrip
 ///INstall linux end
+
+
+sudo apt install ./skypeforlinux-64.deb
+sudo dpkg -i skypeforlinux-64.deb
