@@ -4,3 +4,4 @@ gparted
 vlc //video player
 
 scrot bla.png // take screetn shot
+app.diagrams.net

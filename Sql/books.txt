@@ -19,3 +19,5 @@ INSERT INTO books VALUE("ERAGON",100,123,"CHRIS");
 SELECT * FROM books;
 
 select price from books where author='ME';
+
+show tables;

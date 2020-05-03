@@ -1,1 +1,3 @@
 ssh pi@192.168.2.129
+nohup script.py &
+ssh uczen@192.168.2.123
