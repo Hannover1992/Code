@@ -27,3 +27,4 @@ dhclient wlan0
 sudo service network-manager restart
 nmcli device wifi connect APname password
 iwlist wlp3s0 scan
+nm-connection-editor

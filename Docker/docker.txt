@@ -1,0 +1,4 @@
+sudo docker run --name dbs3 -p 5050:5050 -d prohde/dbs:s2020
+sudo docker rm dbs
+
+sudo docker ps -a
