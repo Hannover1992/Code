@@ -8,3 +8,5 @@ eog a.jpg
 app.diagrams.net
 
 xournalpp
+
+gimp //photoschop
