@@ -1,2 +1,0 @@
-//accumulate
-auto acc = boost::accumulate(boost::adaptors::filter(vec, [](int i){ return i < 10;}), 0);

@@ -1,2 +1,0 @@
-rsync --info=progress2 -auvz ~/Music/ /data/music/
-gcp -rv ~/Music/* /data/music/

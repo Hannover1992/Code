@@ -1,1 +1,0 @@
-clear && g++ main.cpp -lboost_filesystem && ./a.out
