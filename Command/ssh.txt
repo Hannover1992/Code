@@ -1,0 +1,6 @@
+ssh pi@192.168.2.146
+nohup script.py &
+ssh uczen@192.168.2.123
+
+
+sshfs user@domain:/remote/directory/ /local/directory/

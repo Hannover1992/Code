@@ -1,0 +1,9 @@
+//see devices
+lsblk
+sudo mount /dev/sdb1 ~/Documents/brain
+sudo mount /dev/sda1 ~/Documents/bunkier
+
+https://unix.stackexchange.com/questions/72125/correct-way-to-mount-a-hard-drive/72127
+
+//when target buss 
+sudo umount -l brain

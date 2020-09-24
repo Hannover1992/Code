@@ -1,0 +1,5 @@
+
+   namespace ba = boost::adaptors;
+   auto i = vec | ba::sliced(0,20) | ba::strided(2) | ba::filtered([](int a){return a % 2 == 0;});
+   std::cout<<"\n";
+   boost::for_each(i, [](int i2){std::cout<<i2<<" ";});

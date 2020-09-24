@@ -1,0 +1,4 @@
+#ifndef BLA
+#define BLA
+	bla bla
+#endif

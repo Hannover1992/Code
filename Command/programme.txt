@@ -1,0 +1,12 @@
+xosview
+evince // for pdf
+gparted
+vlc //video player
+
+scrot bla.png // take screetn shot
+eog a.jpg 
+app.diagrams.net
+
+xournalpp
+
+gimp //photoschop

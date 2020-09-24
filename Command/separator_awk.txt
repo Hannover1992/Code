@@ -1,0 +1,3 @@
+for i in *.bam; do mv "$i" "$(echo $i | awk -F"." '{print $2}').bam"; done
+
+git remote -v | tail -1 | cut -d$'\t' -f 2 | cut -d ' ' -f 1 | xclip
