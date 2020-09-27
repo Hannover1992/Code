@@ -1,0 +1,7 @@
+https://www.digitalocean.com/community/tutorials/installing-and-using-ranger-a-terminal-file-manager-on-a-ubuntu-vps
+
+select dann delete
+
+yy yank
+
+dd paste
