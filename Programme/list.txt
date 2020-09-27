@@ -10,3 +10,6 @@ app.diagrams.net
 xournalpp
 
 gimp //photoschop
+
+kdenlive //video editing
+LosslessCut //video editing only cut file
