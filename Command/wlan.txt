@@ -2,7 +2,7 @@
 nmcli d
 nmcli r wifi on
 nmcli d wifi list
-nmcli d wifi connect Fritz-box-302 pasword <password>
+nmcli d wifi connect EasyBox-397895 password 5DSVnmy8PMeYCCaZ
 
   nmcli -t -f STATE general
            shows the overall status of NetworkManager.

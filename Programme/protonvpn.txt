@@ -1,0 +1,18 @@
+protonvpn init	Initialize                       ProtonVPN profile.
+protonvpn connect, c	                           Select a ProtonVPN server and connect to it.
+protonvpn c [servername]	                     Connect to a specified server.
+protonvpn c -r	                                 Connect to a random server.
+protonvpn c -f	                                 Connect to the fastest server.
+protonvpn c --p2p	                              Connect to the fastest P2P server.
+protonvpn c --cc [countrycode]	               Connect to the fastest server in a specified country.
+protonvpn c --sc	                              Connect to the fastest Secure Core server.
+protonvpn reconnect, r	                        Reconnect or connect to the last server used.
+protonvpn disconnect, d	                        Disconnect the current session.
+protonvpn status, s	                           Print connection status.
+protonvpn configure	                           Change CLI configuration.
+protonvpn refresh	                              Refresh OpenVPN configuration and server data.
+protonvpn examples	                           Print example commands.
+protonvpn --version	                           Display version.
+protonvpn --help	                              Show help message.
+
+sudo protonvpn-cli --disconnect
