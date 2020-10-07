@@ -1,2 +1,0 @@
-#79 pojawi sie dopiero kiedy 78 zostanie skonczony
-task 79 modify depends:78

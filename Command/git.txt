@@ -11,3 +11,4 @@ git reset HEAD~
 save the changes then quit with :wqa to close all the splits. Remember to commit the merge.
 
 $ git commit -am 'merged from several branches'
+git reset --hard 0d1d7fc32
