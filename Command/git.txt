@@ -4,3 +4,4 @@ git submodule update --init --recursive --jobs 8
 
 #und last commit 
 git reset HEAD~ 
+git reset --hard 0d1d7fc32

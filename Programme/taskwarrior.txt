@@ -1,2 +1,6 @@
 #see what have you add today
 task entry:today
+
+task 5 modify dep:1,2
+
+task summary
