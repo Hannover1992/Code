@@ -1,0 +1,5 @@
+zip -r -s 10m archive.zip directory/
+
+zip -s 0 archive.zip --out unsplit.zip
+
+unzip unsplit.zip
