@@ -1,3 +1,6 @@
 git config --global credential.helper store
 git rm --cached path_to_submodule
 git submodule update --init --recursive --jobs 8
+
+#und last commit 
+git reset HEAD~ 

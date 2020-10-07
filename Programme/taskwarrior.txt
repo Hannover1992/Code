@@ -1,0 +1,2 @@
+#see what have you add today
+task entry:today
