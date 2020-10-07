@@ -4,3 +4,10 @@ git submodule update --init --recursive --jobs 8
 
 #und last commit 
 git reset HEAD~ 
+
+:diffg RE  # get from REMOTE
+:diffg BA  # get from BASE
+:diffg LO  # get from LOCAL
+save the changes then quit with :wqa to close all the splits. Remember to commit the merge.
+
+$ git commit -am 'merged from several branches'
