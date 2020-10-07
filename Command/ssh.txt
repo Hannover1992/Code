@@ -4,3 +4,4 @@ ssh uczen@192.168.2.123
 
 
 sshfs user@domain:/remote/directory/ /local/directory/
+ssh 84.63.43.16 -p 500

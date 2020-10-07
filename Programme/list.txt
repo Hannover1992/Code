@@ -13,3 +13,6 @@ gimp //photoschop
 
 kdenlive //video editing
 LosslessCut //video editing only cut file
+
+//image viewr
+sxiv
