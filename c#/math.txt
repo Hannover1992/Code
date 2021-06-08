@@ -1,0 +1,2 @@
+#Mathf standart math library
+float dist = Mathf.Sqrt(sqrtDist);

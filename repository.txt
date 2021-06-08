@@ -1,0 +1,2 @@
+sudo add-apt-repository --remove ppa:videolan/stable-daily
+

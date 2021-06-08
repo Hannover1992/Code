@@ -1,0 +1,6 @@
+create table R (
+	A integer primary key,
+	B integer
+)
+$losche tabelle
+drop table R

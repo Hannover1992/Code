@@ -1,0 +1,12 @@
+To test settings temporarily (settings will be reset after a reboot):
+
+echo 2 | sudo tee -a /sys/module/applespi/parameters/fnmode
+
+
+To apply the changes permanently (persist with reboots):
+
+# Add the option for the fn key
+echo options applespi fnmode=2 | sudo tee -a /etc/modprobe.d/applespi.conf
+# Update initramfs bootfile
+sudo update-initramfs -u -k all
+# Reboot to tes

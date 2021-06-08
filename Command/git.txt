@@ -11,4 +11,12 @@ git reset HEAD~
 save the changes then quit with :wqa to close all the splits. Remember to commit the merge.
 
 $ git commit -am 'merged from several branches'
+
+#to the specifick kommit 
 git reset --hard 0d1d7fc32
+
+#just to the last commit
+git reset --hard HEAD
+
+#how to add only untracked fiels
+It's easy with git add -i. Type a (for "add untracked"), then * (for "all"), then q (to quit)

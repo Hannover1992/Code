@@ -1,0 +1,29 @@
+
+Playback
+Space or ; --- Play/Pause
+K or Shift + P --- Previous Song
+J or Shift + N --- Next Song
+H or Shift + Left Arrow --- Go 10 seconds back
+L or Shift + Right Arrow --- Go 10 seconds forward
+Shift + H or Ctrl + Shift + Left Arrow --- Go 1 second back
+Shift + L or Ctrl + Shift + Right Arrow --- Go 1 second forward
+S --- Shuffle current queue
+R --- Switch repeat modes
+General
+- (Minus*) --- Volume - 10
+= --- Volume + 10
+Shift + - (Minus*) --- Dislike Song and go to next
+Shift + = --- Like Song
+F -- Fullscreen
+M --- Mute/Unmute
+Q --- Maximize/Minimize Player with queue
+Navigation
+GH --- Go to home
+GL --- Go to Library
+GT --- Go to Hotlist
+G, --- Go to Settings
+/ --- Search
+Shift + / --- Show keyboard shortcuts
+
++:w
+:

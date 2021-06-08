@@ -1,0 +1,361 @@
+https://www.digitalocean.com/community/tutorials/installing-and-using-ranger-a-terminal-file-manager-on-a-ubuntu-vps
+
+select dann delete
+
+yy yank
+
+dd paste
+
+j move up 4 lines (mine changed from 10) =my Alt-up
+{n} j or j “n” times
+k move down 4 lines = my Alt-down
+{n} k or k “n” times
+g {letter} quick go to
+gn new tab made at ~/
+Ctrl-n new tab clone
+tab/shift-tab switch tab
+q quit tab, or ranger if only one tab
+[ move up 1 dir in same parent
+] move down 1 dir in same parent
+m {x} bookmark the dir x (any letter/digit)
+`{x} or '{x} go to dir bookmarked x
+`` go to previous dir (go back and forth)
+pg up, pg dn,
+home, end move down/up file list
+dc update cumulative dir size
+du show dir content summary
+J escape Ranger from reading a heavy dir/file
+------file actions----
+/ and enter file name string to navigate [scout -rts]
+n search newest file in dir, or next after search with /
+N previous file after search
+c.. set the next search order
+o.. set the sort order
+i focus a file to scroll it, cursors or Enter one line down, Space, end to file end,
+pg dn pg up, mouse roller
+i to toggle focus, E to edit in nano
+yy copy
+ ya copy add to buffer (can copy-paste files from multiple directories this way)
+ yr copy remove from buffer
+yG copy all files from selected to bottom of list
+ygg copy all files from selected to top of list
+yj copy file plus one file above (my j and k are switched round)
+yk copy file plus one file below
+dd cut (also da, dr – to cut from multiple directories, and dG, dgg, dj, dk)
+pp paste
+po paste with over-write
+pP paste (enqueue)
+pO paste with over-write (enqueue)
+pl paste as symlink (full path)
+pL paste as symlink (relative to path)
+ud clears copy/cut buffer, also u y
+yd copy dir path to X selection (paste in another window with middle mouse button)
+yp copy dir path and file name to X selection
+yn copy file name to X selection
+1
+Ranger keys
+F4 edit file with nano
+insert touch (enter name of new file)
+delete deletes file (no confirm single files by default -can change in conf.rc -set up Trash,
+see below)
+r open file with program
+r1 unpacks selected archive (runs 1st option on a file) – can also hit a number
+and Enter
++/- chmod commands
+------sorting----
+ot sort by type first
+os sort by size first
+oa /oc /om sort by time
+on sort natural
+o{T/S/A/C/M} sort in reverse order from the above modes
+or reverse the sort order
+------marking----
+Space mark
+v invert selection, toggle select all if none yet selected
+t tag toggle
+ut remove all tags
+T remove any tags of selected files
+"{x} custom tag
+------operation----
+Ctrl-r reload
+Ctrl-h, zh toggle hidden files
+Ctrl-c cancel operation
+Ctrl-l redraw window
+z toggle settings
+:, ; open console to enter commands
+s, !, @, # open shell console
+?, F1 man page
+W message log
+11,12,13,14 Enter (on image file) set desktop background with feh (11=scale, 12=tile, 13-
+center, 14=fill)
+my keybindings
+changed
+h history_go -1 = Alt-left
+l history_go 1 = Alt-right
+b toggle multi-select mode (was V)
+ub multi-deselect mode
+<DELETE> shell -s trash-put %s
+du disk usage in order of size
+dz disk usage in order of dir name
+a append/edit name (was A)
+i prepend/edit name (was I)
+2
+Ranger keys
+added
+Alt-up move up 4 lines
+Alt-down move down 4 lines
+Alt-pgup move up half page
+Alt-pgdn move down half page
+F9 move up 10 dirs in same parent
+F10 move down 10 dirs in same parent
+F2 show hidden files
+{n}F12 show files of sub-dir's, n levels deep, all in main column, Ctrl-r to reset
+\] find (auto-opens on unambiguous match)
+\[ travel (auto-opens and keeps operating until escaped) [scout -aefikst]
+\\ mark (files with string are marked when enter is pressed,
+e.g. of same extension)
+| filter (unmatched files are hidden, Ctrl-R to refresh) [scout -iprt]
+ga cd /etc/apt
+M new tab at /media
+Op open with leafpad
+Ow open with libreoffice (4.1 -need to check version)
+On open file in new term nano (rxvt)
+Ol open file in new term to view
+Ot open dir in new terminal
+Vm view: miller mode
+Vt view: multipane mode
+f files f image files
+O open files F feh
+y,d,p yanking fm mogrify
+P super user E exiftool
+X,x delete fa audio files
+dot-number config files fv video files
+'; cd config dir's comma-m mounting
+comma-k backup comma-n nfs
+comma-l symlinks J Github
+comma-d directories comma-z bashburn
+comma-a archives G gpg encryption
+comma-s source files R batch renaming
+comma-i iso
+f.. fle commands
+ fm mkdir
+ ft touch (create file)
+ fe edit file (was E)
+ fn nano (type filename)
+ fl view file with less. q to quit (ranger `i` doesn't show full file)
+ fr rename
+ fb bulkrename
+ fp pyrenamer %d
+3
+Ranger keys
+ f+ and f- make a file executable / non-executable
+ f= change permissions of files – or enter octal mode, e.g. 655, followed by Enter
+ f1 duplicate selected file cp "%f" “%f”_1 -change _1, date etc
+ f2 duplicate selected file with infix -change _1, date-time etc
+ ff find files
+ f\ catfish --path=%d
+ fc meld %s
+ fg grep string in files
+ f? replace string in file(s)
+ fX wipe a file clean
+ fpdf join pdf files
+ fD sort all files into folders by date modified
+ O.. open fles
+ Op open with leafpad
+ Ow open with libreoffice (4.4 -need to check version)
+ On open file in new term nano (rxvt)
+ Ol open file in new term to view (with less)
+ Ot open current dir in new terminal command line
+ f-F2 open files with gnome-mplayer
+y,d,p.. yank, cut, paste commands
+ y2 zenity "Copy To"
+ d2 zenity "Move To"
+ pc copy selected into highlighted dir (rsync update, also folders)
+ pm move selected into highlighted dir (update)
+ pds copy buffered files into highlighted dir
+ pdm move buffered files into highlighted dir
+ ps sync buffered files into current dir
+ ytt sync selected files into dir on next tab
+ yff sync selected files from dir on next tab
+ dtt move selected files into dir on next tab
+ dff move selected files from dir on next tab
+ ys save copy buffer to file and then show the file in pager
+ yb copy file names in copy buffer to clipboard
+ yp copy file name and path to clipboard
+ yd copy directory location to clipboard
+ yn copy only file names to clipboard
+ uu clears copy/cut buffer
+ p\x remove files in dir (to “moved/”) via list (yn)
+ p\v copy files in dir (to “copied/”) via list (yn)
+ P.. {fle commands with super user...}
+ Pm make dir
+ Pt create file
+ Pn nano
+ Pe edit file with nano
+Pp open with leafpad
+ Pr (type new name after) rename file
+ P+ make a file executable
+ Pw change ownership of a file
+4
+Ranger keys
+ Ps sync buffered file into dir
+ Pyt sync selected to dir on next tab
+ Pl symlink a file in dir on next tab (or change)
+
+
+ x.. {delete commands...}
+ Delete move to trash (all selected)
+ Alt-Delete move to trash (only highlighted, not all selected)
+ S-Delete delete
+ X delete
+ PX delete as super user
+ xX shred files
+ xx1 cd ~/.local/share/Trash/files
+ xx2 cd /media/FILES/.Trash/1000/files
+ xx3 cd /media/VIDEO/.Trash/1000/files
+ dot-number.. Edit confg fles
+ .1 ranger/rc.conf
+ .2 openbox/rc.xml
+ .3 openbox/autostart
+ .4 /etc/apt/sources.list
+ .5 /etc/fstab
+ .6 sources.list with leafpad
+ .7 fstab with leafpad
+.8 .Xresources
+F.. {my feh image viewer commands...}
+ Fs start feh slideshow in dir of images
+ Fc start slideshow start from current file
+ Fr start slideshow from selected dir -recursive
+ Fb set file as background and write it to openbox autostart
+ f.. {my image fle commands...}
+ fiv edit image with XnViewMP
+ fm/E.. {my mogrify/exiftool commands...}
+ fim1 reduce jpegs in current dir and place new images in “dir_a” along-side current dir
+change image max diameter size '1200x1200' and quality '90' to what you need
+to use own setting again type s, hit Up and Enter
+ fim2 as fim1 but q=85%
+ fim3 reduce jpegs in current dir, OVERWRITE files, 1200pix, 90%
+ fim4 as fim3 but 700pix 70%
+ fim5 reduce jpegs RECURSIVELY, start from current dir, OVERWRITE files,
+1024pix, 84%
+ fim6 convert png to jpeg -progress will be noted by green temp file moving down list
+ fixx strip iptc keywords from selected images
+ E1 show select exif data for files
+ E2 show all exif data for files
+5
+Ranger keys
+ Ed1 adjust date-time by add or subtract, format is yy:mm:dd hh:mm:ss (or 0 no time
+change)
+ Ed2 set the date, format: yyyy:mm:dd or yyyy:mm or yyyy, use -dt to set date-time
+ Ec add or change comment in exif header on selected files (blank will remove
+comment)
+ Es add keywords to the xmp header of selected images
+ Er add rating to images
+ Ex1 remove all xmp keywords
+ Ex2 remove ratings
+ El1 add keywords to files found from clipboard file name list
+ El2 add ratings to files found from clipboard file name list
+fv.. {my video commands...}
+ fvg gnome-mplayer %s = f-F2
+ fvv vlc %s
+ fvh handbrake %f
+ fva avidemux %f
+ fvf.. {my ffmpeg commands...}
+ fvf1 extract audio from video (flv)
+ fa.. {my audio edit commands...}
+ fae easytag %d
+ faa audacity %f
+ fa1 convert ogg to mp3
+,k.. backup, ,l.. links, ,z.. bashburn, ,d.. directories, ,a.. archives, ,i.. iso, R.. batch
+renaming
+ ,k.. {my backup commands/scripts...}
+ ,k1 ~/scripts/backup %f
+ ,k2 cp ~/.config/ranger/* ~/Settings/ranger/
+ ,k3 ~/scripts/backup-config-files
+ ,k4 gksu sh ~/scripts/backup-sys-files
+ ,l.. {my symlink commands...}
+ ,ll make a symlink to selected dir/file in Links
+ ,lL zenity "Make a Symlink To" -make a symlink in current dir
+ ,lr zenity "Re-link To" -change the target of a symlink
+ ,z.. {my bashburn commands...}
+ ,z1 make a symlink to selected dir/file in bashburn temp dir
+ ,z2 cd to bashburn temp dir
+ ,z3 clear bashburn links to ~/Projects/bashburn/<session> (enter dir name)
+6
+Ranger keys
+ ,zX delete contents from bashburn temp dir
+ ,z4 cd to ~/Projects/bashburn
+ ,z5 add links from session to bashburn tmp dir
+ ,d.. {my directory commands...}
+ ,ds zenity -sync entire contents of current dir with another dir
+ ,dy sync entire contents of current dir with ? dir
+ ,dc clone the dir tree of current dir down -creates empty dir's in new dir 1 level up
+ ,do chown -R $USER %f
+ ,df count files and folders in current dir
+ ,mm mount device with pmount
+ ,u unmount device with pumount
+ ,m1 mount sdb1
+ ,m2 mount sdb2
+ ,m3 mount sdc1
+ ,m4 mount sdc2
+ ,m5 mount mmcblk0p1 (SD card)
+ ,m6 mount a partition on /media/sda?
+ ,u1-6 unmount options
+ ej eject selected external volumes (safely remove) – also F8
+ ,d1 lsblkl (list partitions)
+ ,d2 df -h (list disk usage)
+ ,d3 blkid (list uuid's)
+ ,d4 fdisk -l (list partitions)
+ ,a.. {my archive commands...}
+ ,a1 make zip archive from selected files
+ ,a2 make 7z archive from selected files
+ ,i.. {my iso/dvd commands...}
+ ,i1 mount iso -need to create /mnt/mounted first
+ ,i2 unmount the mounted iso
+ ,i3 burn iso to dvd (`dvd1' or 'dvd2' is usb dvd writer, `dvd' is internal)
+ ,i4 dd iso to usb ?
+ ,xx format a usb stick (repair it)
+ ,cdc copy audio cd, see my page cd copy
+ ,cdej eject CDROM /DVDROM
+ R.. {my fle renaming commands... }
+ Rr.. replace, Rs.. spaces, Ru.. uppercase, Ra.. append, Rp.. prepend, Re.. exifdate,
+Rn.. numbering, Rc.. cut
+ Rr1 Replace string - ?=old @=new, use \ to replace in extension ie 's/\?/\@/', use g to
+replace every occurance, ie 's/?/@/g'
+mode: file-?ame.ext > file-@ame.ext
+ Rr2 Replace string in files recursively
+ Rs1 replace spaces with _ in selected file names
+7
+Ranger keys
+ Rs2 replace spaces with _ recursively from current location
+ Ru1 change lower case letters to upper case in selected
+ Ru2 change upper case letters to lower case in selected
+ Rp1 Prepend to file names -change P, mode: file-name.ext > Pfile-name.ext
+ Rp2 Prepend numbering: i=0 start from, 2=digits, +1=step,
+mode: file-name1.ext > 00file-name1.ext file-name2.ext > 01file-name2.ext
+ Ra1 Append to selected file names inside ext -change A, mode: file-name.ext > filenameA.ext
+ Ra2 Append to selected file names no ext -change A, mode: file-name > file-nameA
+ Ra3 Append modified date to selected file names, ~/scripts/append-date
+mode: file-name.ext > file-name_130825-1520.ext
+ Ra4 Append numbering: i=0 start from, 2=digits, +1=step,
+mode: file-name.ext > file-name_00.ext, file-name_01.ext
+ Re1 Prepend exif date to selected file names, ~/scripts/exifdate-prepend
+mode: file-name.ext > 120806-1134_file-name.ext
+ Re2 Append exif date to selected file names inside ext, ~/scripts/exifdate-append
+mode: file-name.ext > file-name_120806-1134.ext
+ Re3 Rename files from exif date, ~/scripts/exifdate-name
+mode: file-name.ext > 120806-113422.ext
+ Ri1 Infix a string in file names - n=at character (set both n's), ?=string
+ Rih Infix an hyphen at character 8
+ Rn Sequential numbering: 0=start from, 3=digits, +1=step,
+mode: file-name.ext > new-name_000.ext, new-name_001.ext
+if no ext then change ${file##*.} to ext or remove it
+ Rc1 Cut any characters from front of selected file names -change 2,
+mode: file-name.ext > le-name.ext
+ Rc2 Cut any characters from back of selected file names -change {2,
+mode: file-name.ext > file-na.ext
+ R$1 ~/scripts/replace_char
+ R$2 ~/scripts/replace_char_infile
+ R.1 remove dots (.1, .2, .3, .4) in photo no.s
+ R.2 remove dots recursively
+8

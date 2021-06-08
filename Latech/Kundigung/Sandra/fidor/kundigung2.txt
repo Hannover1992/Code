@@ -1,0 +1,57 @@
+\documentclass[%
+  fontsize=11pt, % Schriftgröße
+  version=last%  % Neueste Version von KOMA-Skript verwenden
+]{scrlttr2}
+
+% ===== Deutsche Sprache =====
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+% ============================
+
+\LoadLetterOption{DIN} % Einstellungen für DIN 676 laden
+
+\LoadLetterOption{absender} % Absenderdaten und -einstellungen aus absender.lco laden
+
+\usepackage{graphicx} % Um Grafiken (bspw. das Logo) einbinden zu können
+
+\begin{document}
+
+\begin{letter}{%
+% ===== Zielanschrift =====
+  von:\\
+  Sandra Mazur\\
+  Kellermeyerweg 7\\
+  31303 Burgdorf\\
+  ------------- \\
+  an:\\
+  Fidor Bank AG\\
+  Kundenbetreuung\\
+  80335 M\"unchen%
+% =======================
+}
+
+% ====== Geschäftszeichenzeile =========
+\setkomavar{yourref}{Geburtsdatum\\26.08.1995\\\\IBAN\\DE58 7002 2200 0073 3141 27\\tel:01629536307}          % Ihr Zeichen
+\setkomavar{yourmail}{}         % Ihr Schreiben vom
+\setkomavar{myref}{}            % Unser Zeichen
+\setkomavar{customer}{}        % Kundennummer
+\setkomavar{invoice}{}          % Rechnungsnummer
+\setkomavar{place}{Burgdorf} % Ort
+\setkomavar{date}{\today}       % Datum
+% =====================================
+
+\setkomavar{title}{K\"undigung}
+
+
+\opening{Sehr geehrte Damen und Herren,}
+
+hiermit kündige ich meinen Girokonto-Vertrag fristgerecht, hilfsweise zum nächstmöglichen Zeitpunkt. Bitte senden Sie mir eine schriftliche Bestätigung der Kündigung unter Angabe des Beendigungszeitpunktes zu.\\
+
+Sofern Ihnen für den betreffenden Vertrag eine Einzugsermächtigung vorliegt, widerrufe ich diese zum Ablauf des Vertrages.\\
+
+Bitte überweisen Sie den restlichen Betrag auf mein Referenzkonto.\\
+\closing{Mit freundlichen Grüßen}
+%\includegraphics[scale=0.65]{sign.png}
+
+\end{letter}
+\end{document}

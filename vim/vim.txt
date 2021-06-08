@@ -1,0 +1,11 @@
+
+#save folds
+:mkview
+#open folds
+:loadview
+
+:set filetype=bash:
+:setf bash
+
+Bolk rename folder vim
+cw and W

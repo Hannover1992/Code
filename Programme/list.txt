@@ -16,3 +16,12 @@ LosslessCut //video editing only cut file
 
 //image viewr
 sxiv
+
+
+//mongo db 
+sudo systemctl start mongod
+
+
+sudo systemctl status mongod
+
+mongodb-compass
