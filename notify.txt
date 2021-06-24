@@ -1,6 +1,0 @@
-notify-send "Essen"
-#send notify at certein time
-echo 'notify-send "Work day is done!"' | at 4:00PM 
-#outpt output of certein command
-notify-send something "`ls`"
-

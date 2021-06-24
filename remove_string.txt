@@ -1,6 +1,0 @@
-$f="05 - Means-End Analysis Videos.zip"
-$echo "${f%*.zip}"
-05 - Means-End Analysis Videos
-
-
-

@@ -1,6 +1,26 @@
+.header ON
+
 create table R (
 	A integer primary key,
 	B integer
 )
-$losche tabelle
+
 drop table R
+
+#calculate average
+select *, avg(C) from S order by B
+
+#zeigt vorhandenen tabellen
+.tables
+
+#zeigt schema tabelle
+.schema tablename
+
+#count
+select count(name) from actress;
+
+#ziehe von eine tabelle ab das was in der anderen erschient und sortiere aufsteigen
+select distinct name name_thath_dont_occur_in_movie from producer p1
+except
+select distinct name name_that_occur_in_movie from producer p2 join movie m1 on p2.movie_id = m1.mid
+order by name_thath_dont_occur_in_movie asc;

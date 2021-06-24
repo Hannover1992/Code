@@ -1,1 +1,0 @@
-ffmpeg -i input.avi -vf scale=320:240 output.avi

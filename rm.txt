@@ -1,3 +1,0 @@
-//remove everything except foo.txt
-rm -rf !("foo.txt")
-rm name-{46..69}.png

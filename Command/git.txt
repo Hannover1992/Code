@@ -18,5 +18,8 @@ git reset --hard 0d1d7fc32
 #just to the last commit
 git reset --hard HEAD
 
+#just to the last commit perhaps pre last, don't tested
+git reset --hard HEAD^
+
 #how to add only untracked fiels
 It's easy with git add -i. Type a (for "add untracked"), then * (for "all"), then q (to quit)

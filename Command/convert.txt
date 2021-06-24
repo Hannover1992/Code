@@ -5,6 +5,3 @@ pdftoppm 06-Unterbrechungen.pdf names -png
 convert -verbose -coalesce 1582388103957.gif name.png
 
 pdfunit 1.pdf 2.pdf out.pdf
-
-ffmpeg -i neuro1.mov -f mov
-

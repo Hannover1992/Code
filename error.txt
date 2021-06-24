@@ -1,2 +1,0 @@
-python3 train.py 2>&1 | tail -1 | xclip -sel cli
-

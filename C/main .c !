@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <assert.h>
+
+void print_numbers(int line){
+
+}
+
+void test_int(int i, int j){
+	if(i == j){
+		printf("passed\n");
+	} else {
+		printf("%d differ %d\n",i,j);
+	}
+}
+
+int main(){
+	int i = 3;
+
+	test_int(1,2);
+	test_int(1,1);	
+}

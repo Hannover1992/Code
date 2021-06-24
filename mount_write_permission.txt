@@ -1,2 +1,0 @@
-server# sudo mount /dev/sdb2 /home/storage -o umask=000
-

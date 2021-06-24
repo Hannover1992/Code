@@ -1,2 +1,0 @@
-//to Schow only the firstr line in a file 
-head -1 file

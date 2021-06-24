@@ -25,3 +25,10 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 
 mongodb-compass
+
+#record
+simplescreenrecorder
+
+#cpuusage
+mpstat -P ALL
+nmon

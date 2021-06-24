@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+for x in {1..14}; 
+	do 
+	task add project:uni.digBil.vor$x vorlesung $x vorbereiten 	pri:2 +uni +vorbereiten 	+digBil +vor +vorl 		wait:today+"$((x-2))"week week
+	task add project:uni.digBil.vor$x vorlesung $x nacharbeiten pri:2 +uni +nacharbeiten 	+digBil +nach +vorl 	wait:today+"$((x-2))"week week
+	task add project:uni.digBil.ueb$x uebung $x vorbereiten 	pri:2 +uni +vorbereiten 	+digBil +vor +ueb 			wait:today+"$((x-2))"week week
+	task add project:uni.digBil.ueb$x uebung $x nacharbeiten 	pri:2 +uni +nacharbeiten 	+gruDat +nach +ueb 		wait:today+"$((x-2))"week week
+
+done
+
+

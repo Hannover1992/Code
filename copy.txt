@@ -1,7 +1,0 @@
-#when 2 files with the same naem so they will merge, the older or newes will stay
-rsync --info=progress2 -auvz ~/Music/ /data/music/
-
-gcp -rv ~/Music/* /data/music/
-
-#to merge 2 folders
-rsync -abviuzP src/ dest/
