@@ -1,0 +1,9 @@
+#for installing new patches
+patch < lskdfjs.diff
+
+#to install the prog
+sudo make clean install
+
+#for custim hotkey
+static const char *chromiumcmd[] = { "google-chrome", NULL };
+{ MODKEY,             			XK_g, 	   spawn,          {.v = chromiumcmd } },

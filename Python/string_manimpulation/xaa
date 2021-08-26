@@ -1,0 +1,186 @@
+Disk /dev/loop0: 99,38 MiB, 104202240 bytes, 203520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 55,48 MiB, 58159104 bytes, 113592 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 61,75 MiB, 64729088 bytes, 126424 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 55,45 MiB, 58134528 bytes, 113544 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 77,16 MiB, 80904192 bytes, 158016 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 6,2 MiB, 6496256 bytes, 12688 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop6: 50,98 MiB, 53432320 bytes, 104360 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop7: 32,28 MiB, 33845248 bytes, 66104 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/nvme1n1: 931,53 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: Samsung SSD 970 EVO Plus 1TB            
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: D38B9720-D832-4E4F-B7EB-2F8E1D20B54D
+
+Device              Start        End   Sectors   Size Type
+/dev/nvme1n1p1       2048    1953791   1951744   953M Linux filesystem
+/dev/nvme1n1p2    1953792  128907263 126953472  60,5G Linux swap
+/dev/nvme1n1p3  128907264 1105469439 976562176 465,7G Linux filesystem
+/dev/nvme1n1p4 1105469440 1105502207     32768    16M Microsoft reserved
+/dev/nvme1n1p5 1105502208 1953523711 848021504 404,4G Microsoft basic data
+
+
+Disk /dev/nvme0n1: 465,78 GiB, 500107862016 bytes, 976773168 sectors
+Disk model: Samsung SSD 970 EVO Plus 500GB          
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 47BD862C-C2F6-4144-A18E-B716C6BF16CC
+
+Device             Start       End   Sectors   Size Type
+/dev/nvme0n1p1      2048    391167    389120   190M EFI System
+/dev/nvme0n1p2    391168   1366015    974848   476M Linux filesystem
+/dev/nvme0n1p3   1366016 127162367 125796352    60G Linux swap
+/dev/nvme0n1p4 127162368 976771071 849608704 405,1G Linux filesystem
+
+
+Disk /dev/sda: 931,53 GiB, 1000204885504 bytes, 1953525167 sectors
+Disk model: Expansion+      
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: dos
+Disk identifier: 0x40edf8c7
+
+Device     Boot Start        End    Sectors   Size Id Type
+/dev/sda1        2048 1953523711 1953521664 931,5G 83 Linux
+
+
+Disk /dev/sdb: 117,39 GiB, 126035288064 bytes, 246162672 sectors
+Disk model: SanDisk SDSSDP12
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xfefe0cda
+
+Device     Boot     Start       End   Sectors   Size Id Type
+/dev/sdb1  *         2048 244329522 244327475 116,5G  7 HPFS/NTFS/exFAT
+/dev/sdb2       244330496 246159359   1828864   893M 27 Hidden NTFS WinRE
+
+
+Disk /dev/sdc: 1,84 TiB, 2000398934016 bytes, 3907029168 sectors
+Disk model: ST2000DM008-2FR1
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 68A34744-310F-403A-B93E-A405CF16CE78
+
+Device     Start        End    Sectors  Size Type
+/dev/sdc1   2048 3907028991 3907026944  1,8T Microsoft basic data
+
+
+Disk /dev/loop8: 162,89 MiB, 170778624 bytes, 333552 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop9: 219 MiB, 229638144 bytes, 448512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop10: 218,102 MiB, 229629952 bytes, 448496 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop11: 65,1 MiB, 68259840 bytes, 133320 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop12: 410,58 MiB, 430505984 bytes, 840832 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop13: 64,79 MiB, 67915776 bytes, 132648 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop14: 32,29 MiB, 33853440 bytes, 66120 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop15: 408,3 MiB, 427851776 bytes, 835648 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop16: 51,4 MiB, 53522432 bytes, 104536 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop17: 295,73 MiB, 310079488 bytes, 605624 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop18: 72,84 MiB, 76357632 bytes, 149136 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop19: 92,98 MiB, 97476608 bytes, 190384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes

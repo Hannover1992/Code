@@ -1,1 +1,0 @@
-echo https://bla@pgit.ims.uni-hannover.de/git/cpp2020.git | sed 's/bla/ppti05/g'

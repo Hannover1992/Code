@@ -1,5 +1,0 @@
-docker pull prohde/dbs:s2020
-
-docker run --name dbs -p 5050:5050 -d prohde/dbs:s2020
-
-sudo docker rm -f 59450dbd27184ba636f07646fbfffaf9646d2fce4fe670de051f92c218de42ff

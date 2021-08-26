@@ -32,3 +32,6 @@ simplescreenrecorder
 #cpuusage
 mpstat -P ALL
 nmon
+
+#move mouse every ... second
+keep-presence --seconds 30

@@ -1,3 +1,0 @@
-i=1; for x in *.jpeg; do mv -i "$x" "$((i++)).jpeg"; done
-for ((i = 0 ; i < max ; i++ )); do echo "$i"; done
- 2024  while read line; do rm -rf "$line";done < toDelet.txt 

@@ -1,1 +1,0 @@
-export TEMP=playerctl-2.0.2_amd64.deb

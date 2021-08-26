@@ -1,0 +1,1 @@
+date | sed -e s/s/_/g

@@ -1,0 +1,3 @@
+#run command for loop
+while true; do pdflatex -halt-on-error -interaction=nonstopmode temp.tex && sleep 0.1; done
+

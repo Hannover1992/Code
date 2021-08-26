@@ -9,3 +9,8 @@
 
 Bolk rename folder vim
 cw and W
+
+#auto save
+autocmd TextChanged,TextChangedI <buffer> silent write
+
+#create hotkeys

@@ -1,0 +1,2 @@
+ls | xclip -sel clip
+xclip -out

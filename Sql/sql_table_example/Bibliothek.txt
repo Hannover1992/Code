@@ -1,0 +1,27 @@
+create database uni;
+
+USE uni;
+
+create table STUDENT( 
+	MatrNr numeric(8) primary key, 
+	SName varchar(20) not null, 
+	Fach varchar(8), 
+	Semester numeric(2) not null default 1);
+
+INSERT INTO STUDENT VALUE(10016663, "Patryk Krzyzanski", "Fach", 6);
+
+create table BUCH( 
+	DokNr numeric(8) primary key, 
+	Titel varchar(20) not null, 
+	Verlag varchar(20) not null, 
+	Ort varchar(20) not null, 
+	Jahr numeric(4) not null);
+
+INSERT INTO BUCH VALUE(10016662, "Ksiazka", "Fabryka Slow", "Hannover", 1992);
+
+create table AUSLEIHE ( 
+	DokNr varchar(8) references BUCH, 
+	MatrNr numeric(8), 
+	Date date, 
+	constraint AUSLEIHE_PK primary key (DokNr, MatrNr), 
+	constraint AUSLEIHE_STUD_FK foreign key (MatrNr) references STUDENT (MatrNr));

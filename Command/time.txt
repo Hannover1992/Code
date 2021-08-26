@@ -1,4 +1,0 @@
-echo -ne -130
-
-#run comman at certein time or day 
-01 01 * * * /usr/local/bin/rsbu -vbd1 ; /usr/local/bin/rsbu -vbd2

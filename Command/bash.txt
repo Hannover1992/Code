@@ -1,4 +1,0 @@
-cclp
-/home/uczen/.local/.audio/beep.mp4
-/home/uczen/.local/.audio/beep.mp4
-readlink -f beep.mp4

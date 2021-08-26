@@ -1,2 +1,0 @@
-#so the history stay after closing window
-sudo chown <user> .bash_history

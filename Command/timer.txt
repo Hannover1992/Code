@@ -1,1 +1,0 @@
- at now + 1 minute <<<'notify-send ALARM'

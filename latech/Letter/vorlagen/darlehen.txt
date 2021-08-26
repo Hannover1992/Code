@@ -1,0 +1,33 @@
+\documentclass{letter}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\signature{Olaf Adam Mesynga}
+\address{Damm 19\\ 31224 Peine}
+\begin{document}
+
+\begin{letter}{}
+\textbf{Darlehensvertrag zwischen Privatleuten}\ \ \ \ Datum: 01.04.2021\\ \\ 
+\textbf{Darlehensgeber Ludwig Stachowczyk}\ \ \textbf{Darlehensn\"ahmer Olaf Adam Mesynga}\\
+Der Darlehensgeber gewährt dem Darlehensnehmer folgendes Darlehen:
+\texteuro 1800\\
+Das Darlehen wird in Teilen innerhalb von 2 Monaten auf das Konto von Darlehensnehmer \"uberwiesen. Das Darlehen ist Zinsenlos. Das Darlehensnehmer verplfichtet sich das Darlehen sp\"atestens bis zum Anfang das Jahr 1.1.2023 zu bezahlen.
+
+\textbf{Konto Daten:}\\
+\begin{tabular}{lll}\\
+		& Darlehensgeber 		& Darlehensn\"ahmer \\
+Name: 		& Ludiwg Stachowczyk 		& Olaf Adam Mesynga\\
+IBAN:		& DE07 2595 0130 0129 9212 01	& DE71 2595 0130 0056 0972 29\\
+\end{tabular}
+\center
+
+\vspace{10px}
+
+\begin{tabular}{ll}\\
+Unterschrift Ludwig Stachowczyk & Unterschrift Olaf Adam Mesynga\\
+Datum: 01.04.2021 & Datum: 01.04.2021\\
+&\\
+---------------------------- & ---------------------------- \\
+
+
+\end{letter}
+\end{document}
