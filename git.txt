@@ -30,3 +30,6 @@ It's easy with git add -i. Type a (for "add untracked"), then * (for "all"), the
 #to merge with force
 
 git reset --hard google_notes
+
+#save password
+git config --global credential.helper store
