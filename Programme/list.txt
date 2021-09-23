@@ -35,3 +35,7 @@ nmon
 
 #move mouse every ... second
 keep-presence --seconds 30
+
+
+#for picking a color
+gcolor2

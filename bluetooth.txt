@@ -26,5 +26,9 @@ DC:08:0F:D0:09:C2 Beats
 
 D8:8C:79:01:F0:C3 Buds
 
+D7:...:1D 	XinYi glosniki
+
 #when problem accur
 rfkill unblock all
+
+
