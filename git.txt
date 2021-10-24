@@ -33,3 +33,5 @@ git reset --hard google_notes
 
 #save password
 git config --global credential.helper store
+
+git log --graph --oneline --decorate

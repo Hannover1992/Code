@@ -8,3 +8,6 @@ pdfunit 1.pdf 2.pdf out.pdf
 
 #rotate
 convert picture.png -rotate 270 new
+
+#multiple jpg to one pdf
+convert *.jpg -auto-orient pictures.pdf
