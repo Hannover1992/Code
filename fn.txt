@@ -1,6 +1,6 @@
 To test settings temporarily (settings will be reset after a reboot):
 
-echo 0 | sudo tee -a /sys/module/applespi/parameters/fnmode
+echo 0 | sudo tee -a /sys/module/hid_apple/parameters/fnmode
 
 
 To apply the changes permanently (persist with reboots):
