@@ -1,0 +1,29 @@
+#angibt die verteilungs funktion
+hist(x)
+
+# gibt die werte und deren relative haufigkeit
+groupcounts(x)
+
+
+#Vector
+#Vectoren durcheinander Teilen MatLab "Likewise"
+A./B
+
+
+#Prpability
+#Cumulative Distribution Function  "
+
+
+#distribution
+
+#create 100 equal distributet value 
+linspace(1,100) 
+
+
+
+#custom function
+
+func = @(x) ( x^2)
+
+
+% mit Procent schreibt man kommetare

@@ -39,3 +39,6 @@ keep-presence --seconds 30
 
 #for picking a color
 gcolor2
+
+#for downlado youtueb videos
+yt-dlp

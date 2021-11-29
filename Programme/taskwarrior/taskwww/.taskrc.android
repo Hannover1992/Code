@@ -1,0 +1,94 @@
+# [Created by task 2.5.1 2/11/2021 17:07:39]
+
+# Taskwarrior program configuration file.
+# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# Use the command 'task show' to see all defaults and overrides
+
+
+# Color theme (uncomment one to use)
+#include /usr/share/taskwarrior/light-16.theme
+#include /usr/share/taskwarrior/light-256.theme
+#include /usr/share/taskwarrior/dark-16.theme
+#include /usr/share/taskwarrior/dark-256.theme
+#include /usr/share/taskwarrior/dark-red-256.theme
+#include /usr/share/taskwarrior/dark-green-256.theme
+#include /usr/share/taskwarrior/dark-blue-256.theme
+#include /usr/share/taskwarrior/dark-violets-256.theme
+#include /usr/share/taskwarrior/dark-yellow-green.theme
+#include /usr/share/taskwarrior/dark-gray-256.theme
+#include /usr/share/taskwarrior/dark-gray-blue-256.theme
+#include /usr/share/taskwarrior/solarized-dark-256.theme
+#include /usr/share/taskwarrior/solarized-light-256.theme
+#include /usr/share/taskwarrior/no-color.theme
+
+
+dateformat=DMY
+dateformat.annotation=DMY
+dateformat.report=DMY
+
+urgency.annotations.coefficient=0
+uda.priority.values=0,1,12,13,14,15,16,17,18,19,1A,1B,1C,1D,1E,1F,2,21,22,23,24,25,26,27,28,29,2A,2B,2C,2D,2E,2F,3,4,5,6,7,8
+
+urgency.uda.priority.0.coefficient=1800.0
+
+urgency.uda.priority.1.coefficient=1600.0
+urgency.uda.priority.11.coefficient=1587.5
+urgency.uda.priority.12.coefficient=1575.0
+urgency.uda.priority.13.coefficient=1562.5
+urgency.uda.priority.14.coefficient=1550.0
+urgency.uda.priority.15.coefficient=1537.5
+urgency.uda.priority.16.coefficient=1525.0
+urgency.uda.priority.17.coefficient=1512.5
+urgency.uda.priority.18.coefficient=1500.0
+urgency.uda.priority.19.coefficient=1487.5
+urgency.uda.priority.1A.coefficient=1475.0
+urgency.uda.priority.1B.coefficient=1462.5
+urgency.uda.priority.1C.coefficient=1450.0
+urgency.uda.priority.1D.coefficient=1437.5
+urgency.uda.priority.1E.coefficient=1425.0
+urgency.uda.priority.1F.coefficient=1412.5
+
+urgency.uda.priority.2.coefficient=1400.0
+urgency.uda.priority.21.coefficient=1487.5
+urgency.uda.priority.22.coefficient=1475.0
+urgency.uda.priority.23.coefficient=1462.5
+urgency.uda.priority.24.coefficient=1450.0
+urgency.uda.priority.25.coefficient=1437.5
+urgency.uda.priority.26.coefficient=1425.0
+urgency.uda.priority.27.coefficient=1412.5
+urgency.uda.priority.28.coefficient=1400.0
+urgency.uda.priority.29.coefficient=1387.5
+urgency.uda.priority.2A.coefficient=1375.0
+urgency.uda.priority.2B.coefficient=1362.5
+urgency.uda.priority.2C.coefficient=1350.0
+urgency.uda.priority.2D.coefficient=1337.5
+urgency.uda.priority.2E.coefficient=1325.0
+urgency.uda.priority.2F.coefficient=1312.5
+
+urgency.uda.priority.3.coefficient=1200.0
+
+urgency.uda.priority.4.coefficient=1000.2
+urgency.uda.priority.5.coefficient=800.6
+urgency.uda.priority.6.coefficient=600.0
+urgency.uda.priority.7.coefficient=400.4
+urgency.uda.priority.8.coefficient=200.4
+
+urgency.blocked.coefficient=-1000
+
+
+taskd.certificate=private.certificate.pem
+taskd.ca=ca.crt
+taskd.key=private.key.pem
+
+
+
+taskd.server=inthe.am:53589
+taskd.credentials=inthe_am/hannover1992/0a1621ae-ecd7-4a77-aad7-1d1a3eb50266
+taskd.trust=strict
