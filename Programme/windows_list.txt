@@ -1,0 +1,9 @@
+#Programme
+	#Access Resource monitor
+	resmon
+	
+	#for compling programme
+	msys2
+
+#Site
+	https://geekflare.com/windows-run-commands/	

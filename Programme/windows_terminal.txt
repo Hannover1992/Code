@@ -1,0 +1,2 @@
+#Fibinaci windows til
+Alt + Shift + d

@@ -1,0 +1,14 @@
+#table
+#table
+	CREATE TABLE Persons (
+	    PersonID int,
+	    LastName varchar(255),
+	    FirstName varchar(255),
+	    Address varchar(255),
+	    City varchar(255)
+	);
+
+#create table, with auto incremetn value
+table tblGlobalVar(
+	LiferscheinNr int NOT NULL IDENTITY    PRIMARY KEY,
+);

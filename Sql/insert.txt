@@ -1,0 +1,4 @@
+/*select * from tblErsatzteile where id in (82, 14, 13);*/
+
+#insert defaultvalues into table, helped with table with autoincrement 
+insert into tblGlobalVar default values;

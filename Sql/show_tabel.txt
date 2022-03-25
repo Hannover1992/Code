@@ -1,0 +1,20 @@
+#schow tabels
+select * from cpc_db_2007.INFORMATION_SCHEMA.TABLES;
+
+#scho certein tabel
+select * from Kabel;
+
+#show string like
+select Art from Kabel where art like '%';
+
+#insert into
+
+select * from tblAuftraggeber;
+insert into tblAuftraggeber([Firma Zeile 1], [Firma Zeile 2])
+values ( 'test', 'test2')
+
+
+#alter tabel
+ALTER TABLE tblKleidung ADD Besitzer char;
+alter table tblKleidung drop column Firma;
+

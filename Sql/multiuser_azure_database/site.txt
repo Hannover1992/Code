@@ -1,0 +1,27 @@
+
+/*master*/
+
+	/*1.	create login credential as master.*/
+
+		create login login1
+		with password = 'pwd34p34dm1n.';
+
+
+/*	2. 	create login to server as master.*/
+
+		create user server_connect_1
+		for login login1
+		with default_schema = dbo;
+
+
+/*certein database:*/
+
+	/*1.	create user on database side.*/
+
+		create user sys_test1
+		from login login1;
+
+
+	/*2.	assign */
+		exec sp_addrolemember 'db_owner', 'sys_test1'
+

@@ -24,3 +24,17 @@ select distinct name name_thath_dont_occur_in_movie from producer p1
 except
 select distinct name name_that_occur_in_movie from producer p2 join movie m1 on p2.movie_id = m1.mid
 order by name_thath_dont_occur_in_movie asc;
+
+#get Datatype in the Table
+SELECT*
+FROM cpc_db_2007.INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like 'tblKleidung';
+ps. nvachar for variable char bis 255 character
+
+#for loop
+DECLARE @i int = 0
+
+WHILE @i < 20
+BEGIN
+    SET @i = @i + 1
+    /* do some work */
+END

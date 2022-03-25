@@ -26,3 +26,7 @@ task add Pay rent due:28th recur:monthly until:now+1yr
 task 12 edit
 
 task summary
+
+
+#context
+task context delete study

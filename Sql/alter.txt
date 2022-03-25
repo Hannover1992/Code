@@ -1,0 +1,15 @@
+#
+exec sp_rename 'dbo.tblErsatzteile.Rechnungsnummer', 'Anlagenummer', 'COLUMN';
+
+how to rename column
+
+#change the datatype, worked without changing the information from long ot shot text
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype;
+
+#add new column
+ALTER TABLE table_name
+ADD column_name datatype;
+
+alter table tblLieferschein
+add AbsenderAdresse varchar(255);

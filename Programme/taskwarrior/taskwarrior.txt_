@@ -32,3 +32,5 @@ task summary
 task context define work +cpc
 task context list
 task context none
+task context define work "project:Work or +urgent"
+task context delete study

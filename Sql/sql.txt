@@ -1,0 +1,83 @@
+#get Datatype in the Table
+SELECT*
+FROM cpc_db_2007.INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like 'tblKleidung';
+select * from INFORMATION_SCHEMA.TABLES;
+ps. nvachar for variable char bis 255 character
+
+#select forst 20 from back
+select top 20 * from tblKleidung order by id desc;
+
+#for loop
+DECLARE @i int = 0
+
+WHILE @i < 20
+BEGIN
+    SET @i = @i + 1
+    /* do some work */
+END
+
+#insert into
+insert into tblKleidung (Projekt)
+values ('test');
+select * from tblKleidung;
+
+#entferne column
+ALTER TABLE "table_name"
+column DROP "column_name";
+
+#add new column
+ALTER TABLE Customer ADD LastName VARCHAR(50);
+
+#update value in 
+update tblKleidung set Projekt=802007 where id < 48 and id > 39;
+
+#date
+	#set date as standart
+	getdate()
+	alter table tblKleidung add Datum date DEFAULT GETDATE();
+
+#Object Reletional Mapping
+
+
+#create User
+create login readonlylogin with password='Pwd34p34dm1n.';
+
+#create sql for all table
+SELECT 
+    'ALTER TABLE dbo.' + TABLE_NAME + ' ADD Rechnungsnummer VARCHAR(50);'
+FROM 
+    INFORMATION_SCHEMA.TABLES Tab
+WHERE NOT EXISTS
+    (
+        SELECT 
+            'X'
+        FROM 
+            INFORMATION_SCHEMA.COLUMNS  Col
+        WHERE 
+            Col.TABLE_NAME = Tab.TABLE_NAME
+            AND Col.COLUMN_NAME='DateTime_Table'
+    );
+
+#copy database
+CREATE DATABASE MyAzuredemo_1 AS COPY OF myazuredemo12.MyAzureDemo (SERVICE_OBJECTIVE = 'S2')
+CREATE DATABASE cpc_db_2007_master AS COPY OF "cpc-systemintegration".cpc_db_2007 (SERVICE_OBJECTIVE = 'S2')
+
+
+#drop database
+DROP DATABASE Systemintegration_Testumgebung2;
+
+#to not null bevor change to primary key
+ALTER TABLE tblProjekte
+ALTER COLUMN Projektnummer float NOT NULL
+
+#schow all constraints
+SELECT name
+FROM   sys.key_constraints;
+
+#drop constraints
+
+#create Primary key
+ALTER TABLE tblProjekte
+ADD CONSTRAINT PK_Projektnummer Primary Key (Projektnummer);
+
+

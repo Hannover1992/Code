@@ -1,0 +1,32 @@
+#ng
+	#create new APP
+		ng new myApp
+	
+#nx console
+	serch for running services
+	-> ctr+p -> nx-server server
+	"need nvm 'node' plugin active in zsh"
+	wehen wo go to local host 4200
+	localhost:4200 the site will show up
+
+	For new component generate, 
+	chose project
+	inline style
+	inline css
+
+#imported components
+	#OnInit
+		it run certein by the first time when the page get rendered 
+		also known as live cycle hook
+
+#angular 
+	#Properties
+		#selector
+			name how do i find the component in the app	
+		
+		#bind property from typeskript to html
+			with {{ random }} brackets when this changen then html change also 
+		
+	#Function
+		#intervall
+

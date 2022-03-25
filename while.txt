@@ -1,1 +1,6 @@
-while IFS= read -r line; do echo $line; done < input_file
+#
+	while IFS= read -r line; do echo $line; done < input_file
+	
+	while read p; do
+	  echo "$p"
+	done < peptides.txt

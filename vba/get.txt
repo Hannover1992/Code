@@ -1,0 +1,2 @@
+#get value from Form 
+CREATE DATABASE cpc_db_2007_master AS COPY OF "cpc-systemintegration".cpc_db_2007 (SERVICE_OBJECTIVE = 'S2')

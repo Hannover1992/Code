@@ -1,1 +1,0 @@
-#wenn sync failed on ... then go to data on andorind and delte data

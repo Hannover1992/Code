@@ -1,0 +1,32 @@
+
+Dim MitarbeiterValue As Variant 
+Dim VonProjektIDValue  As Variant 
+Dim ZumProjektIDValue As Variant
+Dim KleidungIDValue As Variant
+Dim ScheinIDValue As Variant
+
+
+Private Sub Command26_Click()
+	MitarbeiterValue = 	Me.Mitarbeiter.Value 
+	VonProjektIDValue = 	Me.VonProjektID.Value 
+	ZumProjektIDValue = 	Me.ZumProjektIDV.Value
+	KleidungIDValue = 	Me.KleidungID.Value
+	ScheinIDValue = 	Me.ScheinID.Value
+
+
+
+	MsgBox (MitarbeiterValue) 
+	MsgBox (VonProjektIDValue) 
+	MsgBox (ZumProjektIDValue)
+	MsgBox(KleidungIDValue)
+	MsgBox(ScheinIDValue)
+
+End Sub
+
+
+Private Sub Form_Load()
+    Dim salary As Double
+    salary = DLookup("MAX(Salary)", "Employee")
+    salary = salary + (1000 / 23)
+    total_salary.Value = salary
+End Sub

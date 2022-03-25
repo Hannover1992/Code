@@ -1,0 +1,6 @@
+/*select * from tblErsatzteile where Typ like '%rei%';*/
+select * from tblErsatzteile where id = 13;
+update tblErsatzteile
+set Anzahl = 19 
+where id = 13;
+

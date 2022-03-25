@@ -1,0 +1,6 @@
+create table Notebook(
+	Bezeichnung varchar(255),
+	SerienNummer int unique,
+	Projekt_Nummer int,
+	foreign key (Projekt_Nummer) references Projekt (ProjektNr)
+);
