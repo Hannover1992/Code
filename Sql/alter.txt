@@ -2,6 +2,7 @@
 exec sp_rename 'dbo.tblErsatzteile.Rechnungsnummer', 'Anlagenummer', 'COLUMN';
 
 how to rename column
+EXEC SP_RENAME 'tblRouter.S/N' , 'Seriennummer', 'COLUMN'
 
 #change the datatype, worked without changing the information from long ot shot text
 ALTER TABLE table_name

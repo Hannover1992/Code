@@ -1,0 +1,55 @@
+#erste
+DECLARE @sql NVARCHAR(max)=''
+
+SELECT @sql += ' Drop table ' + QUOTENAME(TABLE_SCHEMA) + '.'+ QUOTENAME(TABLE_NAME) + '; '
+FROM   INFORMATION_SCHEMA.TABLES
+WHERE  TABLE_TYPE = 'BASE TABLE'
+
+Exec Sp_executesql @sql
+
+
+#zweite
+DECLARE @sql NVARCHAR(max)=''
+
+SELECT @sql += ' Drop table ' + QUOTENAME(s.NAME) + '.' + QUOTENAME(t.NAME) + '; '
+FROM   sys.tables t
+       JOIN sys.schemas s
+         ON t.[schema_id] = s.[schema_id]
+WHERE  t.type = 'U'
+
+Exec sp_executesql @sql
+
+
+#site
+https://stackoverflow.com/questions/27606518/how-to-drop-all-tables-from-a-database-with-one-sql-query
+
+
+
+
+
+
+#delte all data from tabel but less the schema
+delete from [tblErsatzteile];
+delete from [tblFunkgeräte];
+delete from [tblHandy];
+delete from [tblKabel];
+delete from [tblLogistikkoordinatoren];
+delete from [tblNotebook];
+delete from [tblProjektmanager];
+delete from [tblRouter];
+delete from [tblSimkarten];
+delete from [tblSoftware];
+delete from [tblUsrZugangsdaten];
+delete from [tblZubehör];
+delete from [tblProjekte];
+delete from [tblGlobalVar];
+delete from [tblLieferschein];
+delete from [tblLieferscheinAdressen];
+delete from [tblKleidung];
+delete from [tblACU];
+delete from [tblArtikel];
+delete from [tblArtikelkategorie];
+delete from [tblArtikellieferanten];
+delete from [tblArtikelzustand];
+delete from [tblBE-Assets];
+delete from [tblDrucker];

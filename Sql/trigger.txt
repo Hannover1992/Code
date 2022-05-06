@@ -1,0 +1,10 @@
+# 
+CREATE TRIGGER update_date
+    ON tblKleidung
+    AFTER UPDATE
+    AS BEGIN
+    UPDATE tblKleidung
+        SET date = GETDATE()
+        FROM inserted i
+        WHERE i.id = tblKleidung.id
+end

@@ -1,0 +1,10 @@
+function MyProgram()
+        [a,b] = minus_plus(1,2)
+        disp('sometghin')
+    end
+    
+    
+    function [minus, plus]=minus_plus(in_1, in_2)
+    minus=in_1-in_2
+    plus=in_1+in_2
+    end

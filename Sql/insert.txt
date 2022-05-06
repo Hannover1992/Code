@@ -2,3 +2,13 @@
 
 #insert defaultvalues into table, helped with table with autoincrement 
 insert into tblGlobalVar default values;
+
+#make every second row empty
+
+	select ID, Standort
+	from tblProjekte as p1
+union all
+	select ID, NULL
+	from tblProjekte as p2
+	order by ID;
+

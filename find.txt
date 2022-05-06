@@ -1,1 +1,5 @@
 find . -name *kund*
+
+
+#wild card
+find ~/Documents/winaero/ -iname *opera*.txt

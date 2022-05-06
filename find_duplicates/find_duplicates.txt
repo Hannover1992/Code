@@ -1,0 +1,24 @@
+find /path/to/files -type f -exec sha1sum {} + > pcX-sha1.lst
+
+cut -f1 -d" " pcX-sha1.lst pcY-sha1.lst | sort | uniq -d > duplicateshas.lst
+
+for each in $(cat duplicateshas.lst); do grep $each pcX-sha1.lst; done
+
+
+#Real Live Application
+
+
+#erst mal sch fur photo sin ordner ./alle photo erstellt dann fur die in sorted
+ find ./Photo_All_06_05_2022 	-type f -exec sha1sum {} + > pcX-sha1.lst
+ find ./sorted 			-type f -exec sha1sum {} + > pcY-sha1.lst
+
+#ich habe hier die check_sum von duplikaten extrahiert
+ cut -f1 -d" " pcX-sha1.lst pcY-sha1.lst | sort | uniq -d > duplicateshas.lst
+
+#ab hier habe ich die sh, mit von duplikaten sie sind mit pfad versehen, so konnt ich es nachsten schritten extrahierne, um sie zu loschen
+
+ for each in $(cat duplicateshas.lst); do grep $each pcX-sha1.lst >> duplicate_list.lst; done 
+ cut -f3 -d" " duplicate_list.lst > dupli.lst
+ vim dupli.lst
+ sed 'n; d' dupli.lst > rm.txt
+ while read -r line; do rm $line; done < rm.txt

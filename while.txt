@@ -4,3 +4,7 @@
 	while read p; do
 	  echo "$p"
 	done < peptides.txt
+
+# gebe line by line
+
+while read -r line; do echo $line; done < temp.txt

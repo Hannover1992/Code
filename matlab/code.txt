@@ -1,0 +1,2 @@
+#bild einlesen
+I = imread(’myimage.bmp’);
