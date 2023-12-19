@@ -1,0 +1,5 @@
+f(x) = 
+\begin{cases}
+123 \\
+321\\
+\end{cases}

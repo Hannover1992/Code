@@ -1,0 +1,1 @@
+pdfseparate -f 1 -l 3 <source_pdf_file> <name>-%d.pdf

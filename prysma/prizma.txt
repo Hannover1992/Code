@@ -1,0 +1,29 @@
+#um mysql zu intialisieren 
+npx prisma init --datasource-provider mysql 
+
+npx prisma db pull
+npx prisma migrate dev
+
+
+#PRISMA Client use Raw SQL
+	import { PrismaClient } from '@prisma/client'
+
+	const prisma = new PrismaClient()
+
+	#use raw sql
+
+	const result = await prisma.$queryRaw`SELECT * FROM projekt`
+
+	console.log(result)
+
+#where
+let data = await prisma.projekt.findMany(
+    {
+        where:{
+            ProjektID:{
+                contains: 1
+            }
+        }
+    }
+
+)

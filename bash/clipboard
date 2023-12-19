@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Definiere den Pfad, wo das Screenshot gespeichert wird
+screenshot_directory="/home/uczen/Pictures/Screenshots"
+screenshot_name="temp"
+screenshot_path="$screenshot_directory/$screenshot_name.png"
+
+# Erstelle den Ordner falls er nicht existiert
+mkdir -p "$screenshot_directory"
+
+# Überprüfe, ob das Bild `temp.png` bereits existiert und lösche es, falls ja
+if [ -f "$screenshot_path" ]; then
+    rm "$screenshot_path"
+fi
+
+# Erstelle den Screenshot mit scrot und speichere ihn als temp.png
+scrot -s "$screenshot_path"
+
+# Kopiere das neue Bild in die Zwischenablage
+xclip -selection clipboard -t image/png -i "$screenshot_path"

@@ -1,0 +1,12 @@
+#!/bin/bash
+source bluetooth_common.sh
+
+device_mac="74:45:CE:8B:A1:03"
+
+# Check if no arguments were passed and display help
+if [ $# -eq 0 ]; then
+    bluetooth_control $device_mac --help
+    exit 1
+fi
+
+bluetooth_control $device_mac "$@"

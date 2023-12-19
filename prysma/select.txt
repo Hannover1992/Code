@@ -1,0 +1,11 @@
+#where
+let data = await prisma.projekt.findMany(
+    {
+        where:{
+            ProjektID:{
+                contains: 1
+            }
+        }
+    }
+
+)

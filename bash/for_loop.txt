@@ -1,0 +1,18 @@
+#iterate over files and chagne the name to aufsteigende Number
+int1=0
+for x in $(ls)
+	do echo $x
+	int1=$(( $int1+1 ))
+	echo $int1
+done
+
+#rename all files in folder
+int1=0
+for x in $(ls *.jpg)
+	do echo $x
+	int1=$(( $int1+1 ))
+	mv $x $int1.jpg
+done
+
+#for loop bash directory
+for x in {1..4}; do mkdir "$x"Hor;done

@@ -1,0 +1,2 @@
+#arguemnte
+--require ts-node/register -w

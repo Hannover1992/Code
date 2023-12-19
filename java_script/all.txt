@@ -1,0 +1,44 @@
+#get type
+typeof
+
+#output on terminal 
+console.log('hellow world')
+
+
+#iterate
+//*write function
+let x;
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function iterate(x) {
+  for (let i = 0; i < x.length; i++) {
+    console.log(x[i]);
+  }
+}
+
+console.log(iterate(x));
+
+
+#if else short
+let wahr = true;
+ wahr ? console.log('wahr') : console.log('nicht');
+
+#write the right commit for coopilot
+/**
+ * @param {number} x The number to raise.
+ * @param {number} n The power, must be a natural number.
+ * @param {number} y The right numbe
+ * @return {boolean} right value
+ */
+
+function test_power(x, n, y) {
+  return pow(x, n) === y;
+}
+
+#funciton
+const hello = (input) => {
+  return `Hello ${input}`;
+};
+
+console.log(hello('World'));
+

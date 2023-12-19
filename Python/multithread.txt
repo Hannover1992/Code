@@ -1,0 +1,44 @@
+
+# This is a sample Python script.
+
+# Press Umschalt+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    while True:
+        i *= i/57843745;
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+import urllib2
+from multiprocessing.dummy import Pool as ThreadPool
+
+urls = [
+  'http://www.python.org',
+  'http://www.python.org/about/',
+  'http://www.onlamp.com/pub/a/python/2003/04/17/metaclasses.html',
+  'http://www.python.org/doc/',
+  'http://www.python.org/download/',
+  'http://www.python.org/getit/',
+  'http://www.python.org/community/',
+  'https://wiki.python.org/moin/',
+]
+
+# Make the Pool of workers
+pool = ThreadPool(12)
+
+# Open the URLs in their own threads
+# and return the results
+results = pool.map(print_hi, urls)
+
+# Close the pool and wait for the work to finish
+pool.close()
+pool.join()
+

@@ -1,0 +1,4 @@
+#import for public funciton
+export function test_import(){
+    console.log('hello world')
+}

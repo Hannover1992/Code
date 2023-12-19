@@ -1,0 +1,10 @@
+
+https://unix.stackexchange.com/questions/28803/how-can-i-reduce-a-videos-size-with-ffmpeg
+
+https://superuser.com/questions/138331/using-ffmpeg-to-cut-up-video
+
+ffmpeg -ss 00:00:30.0 -i input.wmv -c copy -t 00:00:10.0 output.wmv
+
+Calculate the bitrate you need by dividing your target size (in bits) by the video length (in seconds). For example for a target size of 1 GB (one gigabyte, which is 8 gigabits) and 10 000 seconds of video (2 h 46 min 40 s), use a bitrate of 800 000 bit/s (800 kbit/s):
+
+ffmpeg -i input.mp4 -b 800k output.mp4

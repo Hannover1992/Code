@@ -1,0 +1,53 @@
+\documentclass[%
+  fontsize=12pt, % Schriftgröße
+  version=last%  % Neueste Version von KOMA-Skript verwenden
+]{scrlttr2}
+
+% ===== Deutsche Sprache =====
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+% ============================
+
+\LoadLetterOption{DIN} % Einstellungen für DIN 676 laden
+
+\LoadLetterOption{absender} % Absenderdaten und -einstellungen aus absender.lco laden
+
+\usepackage{graphicx} % Um Grafiken (bspw. das Logo) einbinden zu können
+
+\begin{document}
+
+\begin{letter}{%
+% ===== Zielanschrift =====
+  von:\\
+  Patryk Krzyzanski\\
+  Kellermeyerweg 7\\
+  31303 Burgdorf\\
+  an:\\
+  Drillisch Online GmbH\\
+  Wilhelm-Röntgen-Str. 1-5\\
+  63477 Maintal\\
+
+% =======================
+}
+
+% ====== Geschäftszeichenzeile =========
+\setkomavar{yourref}{}          % Ihr Zeichen
+\setkomavar{yourmail}{}         % Ihr Schreiben vom
+\setkomavar{myref}{}            % Unser Zeichen
+\setkomavar{customer}{C3569325\\tel:017634686208}         % Kundennummer
+\setkomavar{invoice}{}          % Rechnungsnummer
+\setkomavar{place}{Burgdorf} % Ort
+\setkomavar{date}{\today}       % Datum
+% =====================================
+
+\setkomavar{title}{K\"undigung}
+
+
+\opening{Sehr geehrte Damen und Herren,}
+
+hiermit kündige ich meinen oben genannten Handyvertrag fristgerecht zum nächstmöglichen Zeitpunkt. Bitte senden Sie mir eine schriftliche Bestätigung der Kündigung unter Angabe des Beendigungszeitpunktes zu.
+\closing{Mit freundlichen Grüßen}
+\includegraphics[scale=0.65]{sign.png}
+
+\end{letter}
+\end{document}

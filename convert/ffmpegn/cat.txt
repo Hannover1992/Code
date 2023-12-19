@@ -1,0 +1,1 @@
+ffmpeg -ss [start] -i in.mp4 -to [end] -c copy -copyts out.mp4

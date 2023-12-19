@@ -1,0 +1,2 @@
+#find an list in array
+    if(result.includes('project')) {

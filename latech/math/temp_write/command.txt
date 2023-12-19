@@ -1,0 +1,6 @@
+#save after every second
+autocmd TextChanged,TextChangedI <buffer> silent write
+
+#for the for loop
+
+while true; do pdflatex -halt-on-error -interaction=nonstopmode temp.tex && sleep 0.1; done

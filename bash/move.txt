@@ -1,0 +1,4 @@
+ctr+f+alt 	word forward
+ctr+b+alt	word backward
+
+

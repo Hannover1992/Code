@@ -1,0 +1,4 @@
+
+win + ctr + t, change the axis
+
+alt + ctr + i, incirse number of window in master

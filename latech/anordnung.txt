@@ -1,0 +1,6 @@
+#cases
+f(x) = 
+\begin{cases} 
+	x > 10 & x = 100\\
+	x < 10 & x = 77\\	
+\end{cases}

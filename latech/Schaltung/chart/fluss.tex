@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\begin{document}
+\begin{tikzpicture}[node distance=2.5cm,>=stealth,auto]
+    % Define blocks
+    \node[state,initial] (i_const_vsupp) {i\_const\_vsupp};
+    \node[state, right=of i_const_vsupp] (dcdcConverter) {dcdcConverter};
+    \node[state, right=of dcdcConverter] (vout_sink) {vout\_sink};
+    \node[state, below=of i_const_vsupp] (i_const_vref) {i\_const\_vref};
+    \node[state, below=of vout_sink] (i_sca_de_rload) {i\_sca\_de\_rload};
+    \node[state, below=of i_sca_de_rload] (rc) {reward\_calculator};
+
+    % Draw connections
+    \path[->] (i_const_vsupp) edge node {vsupply\_s} (dcdcConverter);
+    \path[->] (i_const_vref) edge node {vref\_s} (dcdcConverter);
+    \path[->] (dcdcConverter) edge[bend left] node {n\_out} (vout_sink);
+    \path[->] (vout_sink) edge node {vout\_s} (i_sca_de_rload);
+    \path[->] (i_sca_de_rload) edge node {rload\_s} (rc);
+    \path[->] (vout_sink) edge[bend left] node[midway,above] {vout\_s} (rc);
+    \path[->] (i_const_vref) edge[bend right] node[midway,above] {vref\_s} (rc);
+\end{tikzpicture}
+\end{document}

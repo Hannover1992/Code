@@ -1,0 +1,17 @@
+https://stackoverflow.com/questions/10258394/if-statement-inside-mysql-trigger
+
+delimiter $$
+
+CREATE TRIGGER attendance_clock AFTER INSERT ON alldevicerecord
+FOR EACH ROW
+BEGIN
+  DECLARE `check` INT;
+  SET `check` = 1;
+  IF (`check` % 2 = 0) THEN
+    INSERT INTO designation (emp_id, clock_date, clock_in) VALUES(new.id, new.time, new.time);
+    SET `check`  = `check` + 1;
+  ELSE
+    UPDATE designation SET clock_out = new.time WHERE emp_id = NEW.id;
+    SET `check`  = `check` + 1;
+  END IF;
+END$$
