@@ -1,1 +1,1 @@
- Also, as in the clean code from Uncle Bob, I would like to give you advices on how to  make something better.  I will give you code and the surrounding code and I will give you prompts on what I want  to achieve. 
+ I would like you to formulate this as a prompt, so that someone like a clean architecture, clean code senior software developer behaves according to these principles. 
