@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pid_file="pid.txt"
+pid_file="/mnt/Brain/3Code/OpenAI/Whisper/record/pid.txt"
 recording_file="/mnt/Brain/3Code/OpenAI/Whisper/record/myrecording.wav"
 server_address="localhost"
 server_port="5001"

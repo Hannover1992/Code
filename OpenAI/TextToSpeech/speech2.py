@@ -1,10 +1,12 @@
-
 import socket
 import threading
 import requests
-import pyaudio
+from pydub import AudioSegment
+from pydub.playback import play
+import simpleaudio
 from openai import OpenAI
 import os
+import io
 
 # Initialize OpenAI client
 client = OpenAI()
@@ -22,20 +24,13 @@ def stream_audio_data(text):
     }
     response = requests.post('https://api.openai.com/v1/audio/speech', headers=headers, json=data, stream=True)
 
-    p = pyaudio.PyAudio()
-    stream = p.open(format=p.get_format_from_width(2),
-                    channels=2,
-                    rate=24000,
-                    output=True)
+    audio_data = b''
+    for chunk in response.iter_content(chunk_size=1024):
+        if chunk:
+            audio_data += chunk
 
-    try:
-        for chunk in response.iter_content(chunk_size=1024):
-            if chunk:
-                stream.write(chunk)
-    finally:
-        stream.stop_stream()
-        stream.close()
-        p.terminate()
+    audio_segment = AudioSegment.from_file(io.BytesIO(audio_data), format='mp3')
+    play(audio_segment)
 
 def handle_client(client_socket):
     try:

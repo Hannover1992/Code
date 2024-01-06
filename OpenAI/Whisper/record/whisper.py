@@ -42,7 +42,7 @@ def main():
         print(f"Connection from {addr}")
         try:
             message = client_socket.recv(1024).decode()
-            message = './myrecording.wav'
+            message = '/mnt/Brain/3Code/OpenAI/Whisper/record/myrecording.wav'
             if message:
                 print("Received audio file path:", message)
                 transcribed_text = transcribe_audio(pipe, message)
